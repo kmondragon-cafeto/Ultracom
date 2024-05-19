@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="jquery-3.2.1.slim.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</head>
+<body onload="generatePasswordBox();load();blockRandomField();">
+    <div class="container jumbotron horizontal-center">
+        <div class="row">
+            <div class="col-md-auto">
+            Fill all enabled fields with number below<br>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-md-center" id="passwordBox"></div>
+    
+        <button class="buttonLogin" type="button" onclick="verifyPasswd();">Log in</button>
+    </div>
+    <br>
+    <div class="container jumbotron horizontal-center">
+            <p id="loggedIn"></p>
+    </div>  
+</body>
+</html>
